@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/refreshPrices" android:title="Refresh" android:titleCondensed="Refresh"/>
+   	<item android:id="@+id/buyHolding" android:title="Buy Holding" android:titleCondensed="Buy"/>
+   	<item android:id="@+id/sellHolding" android:title="Sell Holding" android:titleCondensed="Sell"/>
+   	
+<!--  
+	<item android:id="@+id/moveHoldings" android:title="Move To..." android:titleCondensed="Move"/>
+	<item android:id="@+id/deleteHoldings" android:title="Delete" android:titleCondensed="Del"/>
+-->
+</menu>

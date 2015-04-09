@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sell" 
+        android:gravity="center_horizontal" 
+        android:textSize="24dip" 
+        android:padding="6dip"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock" 
+                android:padding="3dip"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/sellStockCode"
+                android:inputType="textCapCharacters"
+                android:padding="3dip"
+                android:maxLength="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </AutoCompleteTextView>
+
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity" 
+                android:padding="3dip"/>
+
+            <EditText
+                android:id="@+id/sellQuantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+		        android:gravity="right" 
+                android:inputType="number" 
+                android:padding="3dip">
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="Price" 
+                android:padding="3dip"/>
+
+            <EditText
+                android:id="@+id/sellUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:gravity="right" 
+                android:inputType="numberDecimal" 
+                android:padding="3dip"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" 
+                android:padding="3dip"/>
+
+            <Button
+                android:id="@+id/sellDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allocate By..." 
+                android:padding="3dip"/>
+
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+		
+				<Spinner 
+			        android:id="@+id/sellAllocationMethodSpinner"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+				    android:layout_weight="1"/>
+		
+				<Button
+				    android:id="@+id/sellSelectButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:state_enabled="false"
+				    android:text="View Alloc" />
+		
+		    </LinearLayout>
+	    </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="Profit/Loss" 
+                android:padding="3dip"/>
+        	<TextView
+			    android:id="@+id/profitLossAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="" 
+		        android:gravity="right" 
+                android:padding="3dip"/>
+        </TableRow>
+	    
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+		        android:layout_column="1"
+		        android:paddingTop="8dip"
+			    android:orientation="horizontal">
+		
+				<Button
+				    android:id="@+id/sellCancelButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="Cancel" />
+		
+				<Button
+				    android:id="@+id/sellOKButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="OK" />
+		
+		    </LinearLayout>
+	    </TableRow>    
+        
+    </TableLayout>
+</LinearLayout>

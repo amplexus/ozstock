@@ -1,0 +1,9 @@
+<resources>
+
+    <string-array name="sellAllocationSpinnerArray">
+        <item>Min gains</item>
+        <item>Max gains</item>
+        <item>Let me choose</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/sellHolding" android:title="Sell Holding" android:titleCondensed="Sell"/>
+	<item android:id="@+id/buyHolding" android:title="Buy Holding" android:titleCondensed="Buy"/>
+	<item android:id="@+id/deleteHolding" android:title="Delete Holding" android:titleCondensed="Del"/>
+	<item android:id="@+id/viewPortfolioTransactions" android:title="View Transactions" android:titleCondensed="View Tx"/>
+		
+<!-- 
+	<item android:id="@+id/stockNews" android:title="Stock News" android:titleCondensed="News"/>
+	<item android:id="@+id/stockCharts" android:title="Stock Charts" android:titleCondensed="Charts"/>
+	<item android:id="@+id/moveHolding" android:title="Move Holding" android:titleCondensed="Move"/>
+-->
+</menu>

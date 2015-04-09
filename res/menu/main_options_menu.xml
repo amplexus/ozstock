@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/refreshPrices" android:title="Refresh" android:titleCondensed="Refresh"/>
+   	<item android:id="@+id/newPortfolio" android:title="New Portfolio" android:titleCondensed="New"/>
+	<item android:id="@+id/preferences" android:title="Preferences" android:titleCondensed="Prefs"/>
+	<item android:id="@+id/downloadCompanyList" android:title="Download ASX Companies List" android:titleCondensed="D/L Companies"/>
+	<item android:id="@+id/about" android:title="About" android:titleCondensed="About"/>
+	<item android:id="@+id/viewAllTransactions" android:title="View Transactions" android:titleCondensed="View Tx"/>
+		
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+	    <!-- date, type, stock code, [+|-]amount -->
+
+	    <TextView
+	        android:id="@+id/txStockCode"
+	        android:layout_weight="20"
+	        android:layout_marginRight="1dip"
+	        android:text="STK" 
+            android:layout_height="wrap_content"
+            android:layout_width="0dip" />
+
+	    <TextView
+	        android:id="@+id/txTransactionDate"
+	        android:layout_weight="40"
+	        android:layout_marginRight="1dip"
+	        android:text="19/03/12"
+            android:layout_height="wrap_content"
+            android:layout_width="0dip" />
+	    
+	    <TextView
+	        android:id="@+id/txTransactionType"
+	        android:layout_weight="20"
+	        android:layout_marginRight="1dip"
+	        android:text="BUY"             
+	        android:layout_height="wrap_content"
+			android:layout_width="0dip"/>
+
+	    <TextView
+	        android:id="@+id/txAmount"
+	        android:layout_width="0dip"
+	        android:layout_weight="40"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="$123456789"
+	        android:layout_height="wrap_content"/>
+</LinearLayout>

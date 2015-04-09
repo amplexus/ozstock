@@ -1,0 +1,101 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:stretchColumns="0"
+		android:layout_marginTop="2dip"
+		android:layout_marginBottom="2dip">
+	<TableRow>
+	    
+	    <TextView
+	        android:id="@+id/itemStockCode"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:layout_marginRight="1dip"
+	        android:text="STK" >
+	    </TextView>
+
+	    <TextView
+	        android:id="@+id/itemPurchaseUnitPrice"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="999.99" />
+
+	    <TextView
+	        android:id="@+id/itemPurchaseQuantity"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="99999999" />
+	
+	    <TextView
+	        android:id="@+id/itemPurchaseTotalCost"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="99999999" />
+	
+	    <TextView
+	        android:id="@+id/itemProfitLossPercent"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+		    android:text="9999%" />
+
+	</TableRow>	    
+
+	<TableRow>
+	
+	    <TextView
+	        android:id="@+id/itemPurchaseDate"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:layout_marginRight="1dip"
+	        android:text="19/03/12" />
+	    
+ 		<TextView
+	        android:id="@+id/itemCurrentUnitPrice"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="999.99" />
+	
+ 		<TextView
+	        android:id="@+id/itemDummy"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:text=""
+	        android:layout_marginRight="1dip"
+	        android:state_enabled="false" />
+ 		
+ 	    <TextView
+	        android:id="@+id/itemCurrentValue"
+	        android:layout_column="3"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="99999999" />
+	
+	    <TextView
+	        android:id="@+id/itemProfitLossAmount"
+	        android:layout_width="0dip"
+	        android:layout_weight="20"
+	        android:gravity="right"
+	        android:layout_marginRight="1dip"
+	        android:text="999999" />
+	
+	</TableRow>
+	
+	<View
+        android:layout_height="1dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dip"
+        android:background="#FF909090" />
+		
+</TableLayout>

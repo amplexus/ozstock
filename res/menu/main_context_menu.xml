@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/viewPortfolio" android:title="View" android:titleCondensed="View"/>
+	<item android:id="@+id/renamePortfolio" android:title="Rename" android:titleCondensed="Ren"/>
+	<item android:id="@+id/deletePortfolio" android:title="Delete" android:titleCondensed="Del"/>
+	<item android:id="@+id/viewPortfolioTransactions" android:title="View Transactions" android:titleCondensed="View Tx"/>
+</menu>

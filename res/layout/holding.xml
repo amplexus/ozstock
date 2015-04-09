@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/headerLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Holding" 
+        android:gravity="center_horizontal" 
+        android:textSize="24dip" 
+        android:padding="6dip"/>
+
+    <TableLayout
+        android:id="@+id/holdingFormTableLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/holdingStockCodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock" 
+                android:padding="3dip"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/holdingStockCode"
+                android:inputType="textCapCharacters"
+                android:padding="3dip"
+                android:maxLength="3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </AutoCompleteTextView>
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/holdingPurchaseQuantityLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantity" 
+                android:padding="3dip"/>
+
+            <EditText
+                android:id="@+id/holdingPurchaseQuantity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+		        android:gravity="right" 
+                android:inputType="number" 
+                android:padding="3dip">
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/holdingPurchaseUnitPriceLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:text="Price" 
+                android:padding="3dip"/>
+
+            <EditText
+                android:id="@+id/holdingPurchaseUnitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		        android:gravity="right" 
+                android:inputType="numberDecimal" 
+                android:padding="3dip"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/holdingPurchaseDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date" 
+                android:padding="3dip"/>
+
+            <Button
+                android:id="@+id/holdingPurchaseDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+		        android:layout_column="1"
+		        android:paddingTop="8dip"
+			    android:orientation="horizontal">
+		
+				<Button
+				    android:id="@+id/holdingCancelButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="Cancel" />
+		
+				<Button
+				    android:id="@+id/holdingOKButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="OK" />
+		
+		    </LinearLayout>
+	    </TableRow>    
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_x="20dp"
+    android:layout_y="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+	    android:drawableTop="@drawable/ic_launcher"
+        android:textColorHighlight="#656564" >
+    </TextView>
+
+</LinearLayout>
