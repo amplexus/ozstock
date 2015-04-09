@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.amplexus.app.ozstock2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+		
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:backupAgent=".helper.MyBackupAgentHelper"
+        android:debuggable="true">
+    	
+    	<meta-data android:name="com.google.android.backup.api_key"
+           android:value="your_backup_service_key" />
+    
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".PortfolioActivity"
+            android:label="Portfolio" />
+
+        <activity
+            android:name=".HoldingActivity"
+            android:label="Holding" />
+        
+        <activity
+            android:name=".BuyActivity"
+            android:label="Buy" />
+        
+        <activity
+            android:name=".SellActivity"
+            android:label="Sell" />
+        
+        <activity
+            android:name=".TransactionListActivity"
+            android:label="Transaction List" />
+        
+        <service android:name=".FinanceService" />
+        
+        <receiver android:name=".MainActivity$BatteryLevelReceiver">
+			<intent-filter>
+  				<action android:name="android.intent.action.ACTION_BATTERY_LOW"/>
+  				<action android:name="android.intent.action.ACTION_BATTERY_OKAY"/>
+  			</intent-filter>
+		</receiver>
+		
+        <receiver android:name=".MainActivity$PowerConnectionReceiver">
+		  <intent-filter>
+			    <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+			    <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+  			</intent-filter>
+		</receiver>
+        
+    </application>
+
+</manifest>
