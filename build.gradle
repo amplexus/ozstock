@@ -23,11 +23,11 @@ dependencies {
 
 android {
     // Per whatever version dir is found in: ~/adt-bundle-linux-x86_64/sdk/build-tools/
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "22.0.1"
 
     // Per whatever dirs are found in: ~/adt-bundle-linux-x86_64/sdk/platforms/
-    // compileSdkVersion 21 // 5.0
-    compileSdkVersion 19 // 4.4
+    compileSdkVersion 21 // 5.0
+    // compileSdkVersion 19 // 4.4
     
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_6
