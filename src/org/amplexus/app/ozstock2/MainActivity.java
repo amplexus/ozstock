@@ -1143,7 +1143,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	 * Triggers when battery state changes
 	 */
 	public class BatteryLevelReceiver extends BroadcastReceiver {
-		public final String TAG = BatteryLevelReceiver.class.getSimpleName() ;
+		public final String TAG = "BatteryLevelReceiver" ;
 	    @Override
 	    public void onReceive(Context context, Intent intent) {
 			Log.i(TAG, "BatteryLevelReceiver: Calibrating alarming...") ;
@@ -1161,7 +1161,7 @@ public class MainActivity extends Activity implements OnItemClickListener {
 	 * Triggers when battery state changes
 	 */
 	public class PowerConnectionReceiver extends BroadcastReceiver {
-		public final String TAG = PowerConnectionReceiver.class.getSimpleName() ;
+		public final String TAG = "PowerConnectionReceiver" ;
 	    @Override
 	    public void onReceive(Context context, Intent intent) {
 	    	String action = intent.getAction() ;
